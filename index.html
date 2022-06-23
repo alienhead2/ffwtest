@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="main_container__title">
+            <h1 class="title">Please select one font</h1>
+            <div class="js_tabs">
+                <span class="js_tab js_tab__1" data-id="myFonts">my fonts</span>
+                <span class="js_tab js_tab__2" data-id="buyFonts">buy fonts</span>
+            </div>
+        </div>
+        <div class="card_container content active-step" id="myFonts"> 
+            <div class="cards_container">
+            <div class="card card_1">
+                <div class="background_div">
+                    <div class="green_card card_text">
+                        <span class="bottom_left_text text_green_card">
+                            M
+                        </span>
+                    </div>
+                </div>
+                <div class="input_text">
+                    <input type="radio" name="card" id="1" value="card_1" onclick="getRadioValue()">
+                    <label for="1">Merriweather project is led by Sorkin Type</label>
+                </div>
+            </div>
+            <div class="smaller_cards">
+                <div class="card card_2">
+                    <div class="small_background__div">
+                        <div class="pink_card card_text">
+                            <span class="bottom_left_text text_smaller_card">
+                                R
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input_text">
+                        <input type="radio" name="card" id="2" value="card_2" onclick="getRadioValue()">
+                        <label for="2">Roboto doesn't compromise, allowing letters</label>
+                    </div>
+                </div>
+                <div class="card card_3">
+                    <div class="small_background__div">
+                        <div class="blue_card card_text">
+                            <span class="bottom_left_text text_smaller_card">
+                                NS
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input_text">
+                        <input type="radio" name="card" id="3" value="card_3" onclick="getRadioValue()">
+                        <label for="3">Nato Sans cover over 30 scripts</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="card_container content" id="buyFonts">
+            <div class="lorem">
+                <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eaque natus voluptas rerum pariatur, eum nihil dicta rem perspiciatis voluptates, exercitationem officiis. Harum perspiciatis odio, facere rerum voluptas illo culpa.</span>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>   
+</body>
+</html>

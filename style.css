@@ -1,0 +1,200 @@
+@font-face {
+    font-family: monster;
+    src: url(monster.ttf);
+  }
+html{
+    font-family: monster;
+}
+.main_container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.card_container{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.cards_container{
+    width: 500px;
+    height: 230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.input_text{
+    width: 150px;
+    line-height: 20px;
+}
+.main_container__title{
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 25px;
+    padding-left: 10px;
+}
+.js_tabs{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.js_tab__2{
+    padding-left: 1em;
+}
+
+.card_1{
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.green_card{
+    width: 120px;
+    height: 120px;
+    background-color:rgb(4, 184, 82);
+    border-radius: 15px;
+    margin: 2px;
+    position: relative;
+}
+
+.pink_card{
+    width: 70px;
+    height: 70px;
+    background-color:rgb(255, 105, 242);
+    border-radius: 15px;
+    margin: 2px;
+    position: relative;
+}
+.blue_card{
+    width: 70px;
+    height: 70px;
+    background-color:rgb(39, 72, 232);
+    border-radius: 15px;
+    margin: 2px;
+    position: relative;
+}
+.text_green_card{
+    font-size: 40px;
+    color: lightgray;
+    opacity: 0.5;
+}
+.smaller_cards{
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.smaller_cards > .card{
+    display: flex;
+    flex-direction: row;
+}
+.text_smaller_card{
+    font-size: 20px;
+    color: lightgray;
+    opacity: 0.5;
+}
+.bottom_left_text{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.small_background__div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.background_div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 125px;
+    height: 125px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.input_text{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
+.input_text:first-child{
+    margin-top: 2em;
+}
+.active{
+    opacity: 0.5;
+}
+
+@media(max-width: 600px){
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transform: translate(0%, 0%);
+        left: 0%;
+        top: 0%;
+    }
+    .main_container__title{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .card_container{
+        width: 95vw;
+        height: auto;
+        border: 0;
+    }
+    .cards_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .smaller_cards > .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 2em;
+    }
+    .input_text{
+        margin-top: 1em;
+    }
+}
+
+.content.active-step{
+    display: flex;
+}
+
+.content{
+    display: none;
+}
+
+.js_tab.active-step{
+    color: orange;
+}
+.js_tab{
+    cursor: pointer;
+}
+.lorem {
+    width: 400px;
+    align-self: center;
+    margin: 0 auto;
+  }
+
